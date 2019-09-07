@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  web-api:
+    container_name: calc-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: esilva2902/calc-api
+    ports:
+      - 8080:80
+
+
